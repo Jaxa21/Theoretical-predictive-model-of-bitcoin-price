@@ -44,4 +44,5 @@ Data Limitations: The model operates exclusively on endogenous data (price, volu
 Interpretability: Despite the integration of Attention layers, the model remains fundamentally a "black-box" structure. This makes it highly difficult to isolate specific decision-making factors during periods of extreme market volatility.
 
 6. Engineering Conclusion
-This project empirically demonstrates that building a model with high theoretical accuracy is strictly secondary to the complexities of transaction cost management and risk mitigation. The true value of this system lies in its high-performance Polars data pipeline and its analytical framework, which ruthlessly exposes how operational costs destroy theoretical Sharpe ratioskiej trafności teoretycznej jest wtórna wobec problemu zarządzania kosztami transakcyjnymi i ryzykiem.
+This project empirically demonstrates that building a model with high theoretical accuracy is strictly secondary to the complexities of transaction cost management and risk mitigation. The true value of this system lies in its high-performance Polars data pipeline and its analytical framework, which ruthlessly exposes how operational costs destroy theoretical The Sharpe ratio of theoretical validity is secondary to the problem of managing transaction costs and risk.
+
