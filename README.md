@@ -8,14 +8,14 @@ RobustScaler was implemented for scaling the input features.
 Cryptocurrency time series are characterized by extreme volatility and fat-tailed distributions. 
 RobustScaler, which relies on the median and the Interquartile Range (IQR), prevents the model from being dominated by extreme outliers. In contrast, standard Z-score normalization would severely flatten and distort the underlying market signal during flash crashes or spikes.
 
-Predictive Model (Attention-LSTM)
+1. Predictive Model (Attention-LSTM)
 A hybrid architecture combining Long Short-Term Memory (LSTM) layers with a Multi-Head Attention mechanism was deployed.
 
 The problem was framed as binary classification (probability of price increase/decrease) rather than point price regression.
 
  Performing regression on highly noisy financial time series almost inevitably leads to a "lagging" effect (the model merely repeats yesterday's price). The Attention mechanism allows the model to dynamically assign weights to significant events within a 30-day window, theoretically enabling better identification of trend reversal patterns than classic recurrent neural networks.
 
-3. Backtesting Methodology
+2. Backtesting Methodology
 The implemented backtesting engine rigorously accounts for Fees and Slippage.
 
 Cost Analysis: Introducing a total cost of 0.15% per transaction serves as a strict reality check. Most academic models that exhibit high Win Rates in frictionless environments quickly lose their profitability once market microstructure and execution costs are factored in.
